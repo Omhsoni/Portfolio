@@ -1,0 +1,496 @@
+body{
+    background-color: rgb(75, 75, 75);
+    background: linear-gradient(to bottom right, #000000, #4f4f4f);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+h1{
+    text-shadow:2px 2px #5b5a5a ;
+    color: #d1d1d1;
+    font-family: 'Protest Riot', sans-serif;
+    margin-left: 4rem;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+.basic-info{
+    background-image: url(./backimg3.png);
+    border-bottom: #414548;
+    width: 100%;
+    height: 6rem;  
+    background-color: rgb(54, 53, 53);
+    padding: 0.25rem;
+    display: flex;
+}
+.buttons{
+    width: 100rem;
+}
+.contact-btn{
+    text-shadow: 1px 1px 2px solid black;
+    margin: 2px;
+    box-shadow: 2px 2px 2px rgb(12, 12, 12) ;
+}
+.contact-btn i{
+    font-size: large;
+}
+.offcanvas-title{
+    color: #d1d1d1;
+    text-decoration: underline;
+}
+.aboutme.show{
+    display: flex;
+    flex-direction: row;
+}
+.basic-info-image{
+    margin-left: 10rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    border: 2px solid rgb(132, 69, 10); 
+}
+.about-img-image{
+    border: 3px solid black;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+}
+.major-projects{
+    display: flex;
+    margin: 2rem;
+    height: 16rem;
+}
+.major-project-main{
+    width:22rem;
+}
+.project-buttons{
+    width: 15rem;
+    margin: 3px 0;
+}
+.main-card{
+    height: 220px;
+    width: 300px !important;
+    box-shadow: 5px 5px 10px rgb(13, 12, 12);
+}
+
+/* // ANIMATIONS */
+   .main-card {
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+  .main-card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+  .main-card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .main-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .main-card:hover img {
+    filter: grayscale(0.3) brightness(0.4);
+  }
+  .main-card:hover::after {
+    opacity: 1;
+    inset: 20px;
+  }
+  
+  .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .content h3,
+  .content p{
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+  }
+  .content h3 {
+    color: #d1d1d1;
+    margin-bottom: 12px;
+    scale: 0.7;
+  }
+  
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d1d1;
+    transform: translateY(50%);
+  }
+  .main-card:hover .content h3 {
+    scale: 1;
+    opacity: 1;
+  }
+  .main-card:hover .content P {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.card{
+    margin: 10px;
+}
+.row{
+    display: flex;
+}
+.tech-stack{
+    display: flex;
+    margin-top: 2rem;
+}
+.tech-card{
+    box-shadow: 3px 3px 5px black;
+    color: white;
+    background-color: #292828;
+    align-items: center;
+    height: 10rem;
+    padding: 0.8rem;
+   
+}
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-body-minor-project{
+    border: 2px solid rgb(218, 85, 85);
+    background-color: rgb(59, 58, 59);
+}
+.minor-projects{
+    margin-top: 2px;
+    padding-top: 5px;
+    color: #d1d1d1;
+}
+.minor-projects a{
+    text-decoration: none;
+    color: inherit;
+}
+.minor-projects i{
+    font-size: 25px;
+}
+.small-box{
+    background-color:rgb(52, 52, 52) ;
+    width: fit-content;
+    block-size: fit-content;
+    padding: 5px;
+    height: 2rem;  
+    margin: 2px;
+    border-radius: 3px;
+}
+.handlers{
+    width: 15rem !important;
+    background: linear-gradient(to bottom,#000000,#414548);
+}
+.handlers i{
+    font-size: 30px;
+}
+.handlers ul{
+    margin-left: -2rem;
+}
+.handler-detail a{
+    text-decoration: none;
+    color: inherit;
+}
+.handler-detail{
+    margin: 0.5rem 0;
+    width: fit-content;
+    border: 1px solid rgb(220, 215, 215);
+    border-radius: 12px;
+    padding: 5px;   
+    color: rgb(255, 255, 255);
+}
+.handler-detail a:hover{
+    text-decoration: underline;
+    color: rgb(149, 73, 18);
+}
+.about-me-content{
+    color: #d1d1d1;
+    border-radius: 20px;
+    padding-left: 6px;
+    background-color: #5b5a5a;
+    border: 1px solid #5b5a5a;
+    margin: 1rem;
+    width: fit-content;
+}
+.about-me-content h5{
+    color: rgb(248, 248, 248);
+}
+.phrase{
+    font-size: 20px;
+    font-family: 'Protest Guerrilla', sans-serif;
+    text-decoration: underline;
+    text-shadow:2px 2px 4px #000000;
+    margin-top: 25px;
+    margin-right: -11rem;
+}
+.phrase div{
+    color: rgb(241, 241, 236);
+    padding-left: 9rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TIMELINE */
+.timeline{
+    padding: 100px 0;
+}
+.carousel{
+    position: relative;
+}
+.carousel-indicators{
+    top: -5rem;
+    width: 75%;
+    margin-left: 14%;
+    position: static;
+    margin-bottom: 40px;
+}
+.blogs-slide-one{
+    padding: 0 50px;
+}
+.carousel-indicators button{
+    text-indent: 0!important;
+    width: 45% !important;
+    position: relative;
+    margin: 0!important;
+    background: 0 0;
+    border: none;
+}
+.carousel-indicators button:before{
+    position:absolute;
+    content: "";
+    border-top: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    left: 0;
+}
+.journey-title{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px black;
+    color: #d1d1d1;
+    margin-top: -5.5rem;
+    position: absolute;
+    left: 58%;
+    transform: translateX(-50%);
+}
+.carousel-indicators button i{
+    margin-top: -11px;
+    position: absolute;
+    font-size: 24px;
+    color: #000000;
+}
+.carousel-indicators button.active i{
+    color: #f49898;
+}
+.carousel-indicators button.active h3{
+    color: #d1d1d1;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 2%;
+    opacity: 0.8; 
+}
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i{
+    font-size: 45px;
+    color: black;
+}
+.blogs-slide-text{
+    background-color: #292828;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    height: 18rem;
+    color: snow;
+    padding-left: 30px;
+    padding-top: 5px;
+    border: 2px solid #292828;
+}
+.blogs-slide-text h2{
+    text-shadow: 2px 2px black
+}   
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 780px) and (min-width: 425px) {
+    .basic-info{
+        background-image: url(./backimg3.png);
+    }
+    .major-projects{
+        display: table;
+    }
+    .major-project-main .main-card{
+        margin-top: 20px;
+        width: 250px !important;
+        height: 170px;
+    }
+    .content p{
+        font-size: 10px;
+    }
+    .content h3{
+        font-size: 15px;
+    }
+    .project-buttons {
+        height: 30px !important;
+        width: 200px;
+    }
+    .tech-card{
+        height: 10rem;
+    }
+    .card-body{
+        font-size: 10px;
+        width: 115px;
+        margin-top: -1rem;
+    }
+    .small-box{
+        height: 23px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .journey-title{
+        font-size: 14px;
+    }
+    .contact-btn{
+        font-size: 10px;
+    }
+    .aboutme{
+        height: 200px !important;
+        
+    }
+    .about-me-content h5{
+        font-size: smaller !important;
+    }
+    
+    
+}
+@media screen and (max-width:425px) {
+    .basic-info{
+        background-image: url(./backimg3.png);
+    }
+    .major-projects{
+        display: block;
+        height: 28rem;
+    }
+    .major-project-main{
+        margin-bottom: 15px;
+    }
+    .main-card{
+        width: 285px !important;
+        height: 190px;
+    }
+    .basic-info-image{
+        margin-left: 2.4rem;    
+    }
+    .phrase div{
+        width: 21rem;
+        padding-right: 8.9rem;
+        align-items: start;
+        justify-content: start;
+        font-size: 11px;
+    }
+    .handlers{
+        width: 210px !important;
+    }
+    .handler-detail{
+        margin-left: -8px !important;
+    }
+    .about-img{
+        height: 170px;
+        width: 100px;
+    }
+    .about-img-image{
+        height: 80px;
+        width: 80px;
+    }
+    .aboutme{
+        height: 170px !important;
+    }
+    .about-me-content{
+        height: 140px !important;
+    }
+    .about-me-content h3{
+        font-size: 15px !important;
+    }
+    .about-me-content h5{
+        font-size: 12px !important;
+    }
+    .about-me-content h3,h5{
+        padding: 2px;
+    }
+    .contact-btn{
+        margin: 5px;
+        font-size: 14px;
+        height: 30px;
+        width: 120px;
+    }
+    .card-text{
+        margin-top: 1rem    ;
+    }
+    .card-title{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .card-body{
+        height: 5rem;
+        width: 240px;
+        margin-right: 4rem;
+        flex-wrap: wrap;
+        display: block;
+        margin-top: -2rem;
+    }
+    .minor-project-btn{
+        margin-top: 14rem !important;
+    }
+    .card-body-minor-project{
+        width: 20rem;
+    }
+    .tech-stack{
+        margin-left: 3px;
+    }
+    .tech-card{
+        height: 10rem;
+    }
+    .small-box{
+        border: 1px solid black;
+        width: fit-content;
+        block-size: fit-content;
+        padding: 3px;
+        height: 1.2rem;  
+        margin: 4px;
+        border-radius: 3px;
+        margin-left: 6rem;
+        font-size: 10px;
+    }
+    .journey-title{
+        font-size: 11px !important;
+        margin-top: -3.5rem;
+    }
+    .blogs-slide-text{
+        height: 20rem;
+    }
+    .blogs-slide-text h2{
+        font-size: 20px !important;
+    }
+    .blogs-slide-text h4, h3{
+        font-size: 15px !important;
+    }
+}
+
+  
